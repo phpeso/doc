@@ -1,27 +1,62 @@
-# Configuration file for the Sphinx documentation builder.
-#
-# For the full list of built-in configuration values, see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
+from datetime import datetime
+import os
 
-# -- Project information -----------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-
-project = 'Peso'
-copyright = '2025, Anton Smirnov'
 author = 'Anton Smirnov'
+copyright = '{}'.format(datetime.now().year)
+language = 'en'
 
-# -- General configuration ---------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
+html_title = 'Peso for PHP'
+html_theme = 'sphinx_book_theme'
+templates_path = ["_templates"]
+html_sidebars = {
+    "**": [
+        "navbar-logo.html",
+        "icon-links.html",
+        "rtd-version.html",
+        "search-button-field.html",
+        "sbt-sidebar-nav.html",
+    ]
+}
+html_theme_options = {
+    'use_edit_page_button': True,
+    'icon_links': [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/phpeso/",
+            "icon": "fa-brands fa-square-github",
+            "type": "fontawesome",
+        },
+        {
+            "name": "GitLab",
+            "url": "https://gitlab.com/phpeso/",
+            "icon": "fa-brands fa-square-gitlab",
+            "type": "fontawesome",
+        },
+        {
+            "name": "Codeberg",
+            "url": "https://codeberg.org/phpeso/",
+            "icon": "fa-solid fa-mountain",
+            "type": "fontawesome",
+        },
+        {
+            "name": "Gitea",
+            "url": "https://sandfox.org/phpeso/",
+            "icon": "fa-solid fa-mug-hot",
+            "type": "fontawesome",
+        },
+        {
+            "name": "Packagist",
+            "url": "https://packagist.org/packages/peso/core",
+            "icon": "https://img.shields.io/packagist/dm/peso/core?style=flat-square",
+            "type": "url",
+        }
+   ]
+}
 
-extensions = []
-
-templates_path = ['_templates']
-exclude_patterns = []
-
-
-
-# -- Options for HTML output -------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
-
-html_theme = 'alabaster'
-html_static_path = ['_static']
+html_context = {
+    'current_version': os.environ.get("READTHEDOCS_VERSION_NAME"),
+    'github_user': "phpeso",
+    'github_repo': "doc",
+    'github_version': "v0.x",
+    'doc_path': "source",
+}
