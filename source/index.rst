@@ -1,17 +1,9 @@
-.. Peso documentation master file, created by
-   sphinx-quickstart on Sun Jun 15 11:52:22 2025.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Peso for PHP
+============
 
-Peso documentation
-==================
-
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
-
+Peso is a PHP framework to query currency exchange rates from various sources
+like specialized currency exchange data services and central banks.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-
