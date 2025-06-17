@@ -8,6 +8,7 @@ like specialized currency exchange data services and central banks.
    :maxdepth: 2
    :caption: Contents:
 
+   install
    integrations
    services
    interop
