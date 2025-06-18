@@ -8,4 +8,4 @@ a simple to use Peso and an Exchange class to be used with Money for PHP.
    :maxdepth: 1
 
    integrations/peso
-   integrations/moneyphp
+   integrations/moneyphp-exchange
