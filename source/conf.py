@@ -46,7 +46,7 @@ html_theme_options = {
         },
         {
             "name": "Packagist",
-            "url": "https://packagist.org/packages/peso/core",
+            "url": "https://packagist.org/packages/peso/",
             "icon": "https://img.shields.io/packagist/dm/peso/core?style=flat-square",
             "type": "url",
         }
