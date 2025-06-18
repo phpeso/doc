@@ -63,3 +63,7 @@ There are two Exchange objects:
     $eur100 = Money::EUR(10000);
 
     var_dump($converter->convert($eur100, new Currency('USD'))); // Money::USD(11512)
+
+.. note:: `See more on the Money for PHP doc page`__.
+
+.. __: https://www.moneyphp.org/en/stable/features/currency-conversion.html
