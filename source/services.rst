@@ -4,6 +4,7 @@ Services
 Specific data sources for currency conversion.
 
 .. toctree::
+   :maxdepth: 1
 
    services/ecb
    services/cnb
