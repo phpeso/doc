@@ -42,21 +42,24 @@ Example::
     $service = new EuropeanCentralBankService($cache);
     $converter = new CurrencyConverter($service);
 
-    echo $converter->convert('12500', 'EUR', 'USD', 2), PHP_EOL; // 14347.50 today
+    // 14347.50 as of 2025-06-19
+    echo $converter->convert('12500', 'EUR', 'USD', 2), PHP_EOL;
 
     // reversible (wraps service with ReversibleService)
 
     $service = EuropeanCentralBankService::reversible($cache);
     $converter = new CurrencyConverter($service);
 
-    echo $converter->convert('12500', 'USD', 'EUR', 2), PHP_EOL; // 10890.40 today
+    // 10890.40 as of 2025-06-19
+    echo $converter->convert('12500', 'USD', 'EUR', 2), PHP_EOL;
 
     // universal (wraps service with IndirectExchangeService)
 
     $service = EuropeanCentralBankService::universal($cache);
     $converter = new CurrencyConverter($service);
 
-    echo $converter->convert('12500', 'USD', 'CZK', 2), PHP_EOL; // 270299.70 today
+    // 270299.70 as of 2025-06-19
+    echo $converter->convert('12500', 'USD', 'CZK', 2), PHP_EOL;
 
 .. note::
     Using this service without a properly set up cache is strongly discouraged
