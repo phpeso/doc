@@ -21,9 +21,9 @@ In this example
 
 Version notes:
 
-* Alpha series: 0.1.x, ... 0.8.x—Unstable to use
-* Beta series: 0.9.x, 0.10.x, ...—Stable to use but interfaces may rapidly change
-* Release series: 1.x—Expected in July or August 2025
+* Alpha series: 0.1.x, ... 0.8.x. Unstable to use
+* Beta series: 0.9.x, 0.10.x, ... Stable to use but interfaces may rapidly change
+* Release series: 1.x. Expected in July or August 2025
 
 Available integrations:
 
