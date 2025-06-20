@@ -27,6 +27,8 @@ Chain service allows you to request data from several sources::
     // ECB doesn't know that
     echo $converter->convertOnDate('1.20', 'USD', 'CZK', 2, '2025-06-13'); // 25.88
 
+.. _builtin_reversible:
+
 ReversibleService
 -----------------
 
