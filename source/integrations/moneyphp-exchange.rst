@@ -37,8 +37,6 @@ There are two Exchange objects:
     use Peso\Money\PesoHistoricalExchange;
     use Peso\Services\EuropeanCentralBankService;
 
-    require __DIR__ . '/vendor/autoload.php';
-
     $exchange = new PesoExchange(new EuropeanCentralBankService());
     $converter = new Converter(new ISOCurrencies(), $exchange);
 

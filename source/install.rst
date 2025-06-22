@@ -9,7 +9,7 @@ To install Peso, first select the desired integration lib, then the desired serv
 
 In this example
 
-* ``peso/peso`` is a simple frontend that acts like an integration lib
+* ``peso/peso`` is a simple wrapper over Peso services for standalone use
 * ``peso/ecb-service`` is a service provider for the European Central Bank
 * ECB service dependencies, same for all HTTP integrations:
 
@@ -30,7 +30,7 @@ Available integrations:
 .. list-table::
 
     * * ``peso/peso``
-      * :ref:`A simple frontend <peso_peso>`
+      * :ref:`A simple library for standalone use <peso_peso>`
     * * ``peso/moneyphp-exchange``
       * :ref:`Exchange class for the Money for PHP library <peso_moneyphp>`
 

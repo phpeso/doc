@@ -47,8 +47,6 @@ Reversible Service can make it bi-directional by calculating a reverse value::
     use Peso\Peso\CurrencyConverter;
     use Peso\Services\EuropeanCentralBankService;
 
-    require __DIR__ . '/vendor/autoload.php';
-
     $converter = new CurrencyConverter(
         new ReversibleService(new EuropeanCentralBankService())
     );
@@ -74,8 +72,6 @@ Indirect Exchange Service can make it every-to-every by using the selected curre
     use Peso\Peso\CurrencyConverter;
     use Peso\Services\EuropeanCentralBankService;
 
-    require __DIR__ . '/vendor/autoload.php';
-
     $converter = new CurrencyConverter(
         new IndirectExchangeService(
             new ReversibleService( // To and from EUR
@@ -99,8 +95,6 @@ Array Service holds static exchange rates::
 
     use Peso\Core\Services\ArrayService;
     use Peso\Peso\CurrencyConverter;
-
-    require __DIR__ . '/vendor/autoload.php';
 
     $service = new ArrayService(
         currentRates: [
@@ -138,8 +132,6 @@ Null Service fails every request, may be useful for testing purposes::
 
     use Peso\Core\Services\NullService;
     use Peso\Peso\CurrencyConverter;
-
-    require __DIR__ . '/vendor/autoload.php';
 
     $converter = new CurrencyConverter(new NullService());
 
