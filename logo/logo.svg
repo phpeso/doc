@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="300"
+   height="300"
+   viewBox="0 0 79.374998 79.375"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.5871292"
+     inkscape:cx="252.34241"
+     inkscape:cy="97.030541"
+     inkscape:window-width="2194"
+     inkscape:window-height="1162"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient7"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#eaeaea;stop-opacity:1;"
+         offset="0"
+         id="stop7" />
+      <stop
+         style="stop-color:#d6d6d6;stop-opacity:1;"
+         offset="0.33000001"
+         id="stop9" />
+      <stop
+         style="stop-color:#c7c7c7;stop-opacity:1;"
+         offset="0.66000003"
+         id="stop10" />
+      <stop
+         style="stop-color:#f2f2f2;stop-opacity:1;"
+         offset="1"
+         id="stop8" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient1"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#ebd197;stop-opacity:1;"
+         offset="0"
+         id="stop1" />
+      <stop
+         style="stop-color:#b48811;stop-opacity:1;"
+         offset="0.33000001"
+         id="stop4" />
+      <stop
+         style="stop-color:#a2790d;stop-opacity:1;"
+         offset="0.66000003"
+         id="stop5" />
+      <stop
+         style="stop-color:#bb9b49;stop-opacity:1;"
+         offset="1"
+         id="stop3" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1"
+       id="linearGradient2"
+       x1="11.624199"
+       y1="11.624202"
+       x2="67.750801"
+       y2="67.750801"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.98360649,0,0,0.98360656,0.65061465,0.65061639)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7"
+       id="linearGradient8"
+       x1="19.228903"
+       y1="19.228903"
+       x2="60.146095"
+       y2="60.146095"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:url(#linearGradient2);fill-rule:nonzero;stroke:#000000;stroke-width:1.30123;stroke-dasharray:none;stroke-opacity:1"
+       id="path1"
+       cx="39.687496"
+       cy="39.687504"
+       r="39.036884" />
+    <circle
+       style="fill:url(#linearGradient8);fill-rule:nonzero;stroke:#000000;stroke-width:1.32291667;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
+       id="path5"
+       cy="39.6875"
+       cx="39.6875"
+       r="28.271368" />
+    <text
+       xml:space="preserve"
+       style="font-size:52.9167px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#b1b1b1;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.32292;stroke-dasharray:none;stroke-opacity:1"
+       x="24.394598"
+       y="58.23481"
+       id="text11"><tspan
+         sodipodi:role="line"
+         id="tspan11"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:52.9167px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';stroke-width:1.32292;stroke-dasharray:none"
+         x="24.394598"
+         y="58.23481">$</tspan></text>
+  </g>
+</svg>

@@ -60,3 +60,5 @@ html_context = {
     'github_version': "v0.x",
     'doc_path': "source",
 }
+
+html_favicon = '../logo/logo.png'
