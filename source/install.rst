@@ -30,7 +30,7 @@ Available integrations:
 .. list-table::
 
     * * ``peso/peso``
-      * :ref:`A simple library for standalone use <peso_peso>`
+      * :ref:`A simple standalone currency converter <peso_peso>`
     * * ``peso/moneyphp-exchange``
       * :ref:`Exchange class for the Money for PHP library <peso_moneyphp>`
 
