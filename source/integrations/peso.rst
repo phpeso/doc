@@ -74,7 +74,7 @@ Convert currency amounts::
         'EUR', // base
         'PHP', // quote
         2, // quote precision. Philippine peso is divided into 100 sentimo
-        '2025-06-13'
+        '2025-06-13', // date (Y-m-d string or DateTime or arokettu/date Date)
     ), PHP_EOL; // '97059.00'
 
 .. note::
