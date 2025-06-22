@@ -1,7 +1,7 @@
 .. _peso_moneyphp:
 
 Money for PHP
-=============
+#############
 
 This package provides integration with the `Money for PHP`_ library.
 
@@ -10,14 +10,14 @@ This package provides integration with the `Money for PHP`_ library.
 .. highlight:: php
 
 Installation
-------------
+============
 
 .. code-block:: bash
 
     composer install peso/moneyphp-exchange
 
 Usage
------
+=====
 
 There are two Exchange objects:
 

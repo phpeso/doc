@@ -1,7 +1,7 @@
 .. _fixer_service:
 
 Fixer
-=====
+#####
 
 .. highlight:: php
 
@@ -10,7 +10,7 @@ This service retrieves the data from `the Fixer.io service <fixer_>`_.
 .. _fixer: https://fixer.io
 
 Installation
-------------
+============
 
 Install the service:
 
@@ -25,7 +25,7 @@ Install the service with all recommended dependencies:
     composer install peso/fixer-service php-http/discovery guzzlehttp/guzzle symfony/cache
 
 Usage
------
+=====
 
 .. note::
     Free key allows you to retrieve only Euro as a base currency.

@@ -1,5 +1,5 @@
 Peso for PHP
-============
+############
 
 Peso is a PHP framework to query currency exchange rates from various sources
 like specialized currency exchange data services and central banks.

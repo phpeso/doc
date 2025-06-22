@@ -1,7 +1,7 @@
 .. _ecb_service:
 
 European Central Bank
-=====================
+#####################
 
 .. highlight:: php
 
@@ -10,7 +10,7 @@ This service retrieves the data from `the European Central Bank <ecb_>`_.
 .. _ecb: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
 
 Installation
-------------
+============
 
 Install the service:
 
@@ -25,7 +25,7 @@ Install the service with all recommended dependencies:
     composer install peso/ecb-service php-http/discovery guzzlehttp/guzzle symfony/cache
 
 Usage
------
+=====
 
 Example::
 

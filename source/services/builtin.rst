@@ -1,12 +1,12 @@
 Proxies and Dummy Services
-==========================
+##########################
 
 .. highlight:: php
 
 Proxies and Dummy Services are defined in the core library, ``peso/core``.
 
 ChainService
-------------
+============
 
 ``\Peso\Core\Services\ChainService($service1, $service2, ...)``
 
@@ -30,7 +30,7 @@ Chain service allows you to request data from several sources::
 .. _builtin_reversible:
 
 ReversibleService
------------------
+=================
 
 ``\Peso\Core\Services\ReversibleService``
 
@@ -56,7 +56,7 @@ Reversible Service can make it bi-directional by calculating a reverse value::
     echo $converter->convertOnDate('123.45', 'USD', 'EUR', 2, '2025-06-13'); // 107.24
 
 IndirectExchangeService
------------------------
+=======================
 
 ``\Peso\Core\Services\IndirectExchangeService``
 
