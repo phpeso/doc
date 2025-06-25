@@ -46,3 +46,10 @@ Available services:
       * :ref:`Fixer <fixer_service>`
     * * ``peso/openexchangerates-service``
       * :ref:`Open Exchange Rates <openexchangerates_service>`
+
+Available interoperability connectors:
+
+.. list-table::
+
+    * * ``peso/peso-exchanger-interop``
+      * :ref:`Exchanger and Swap <exchanger_interop>`
