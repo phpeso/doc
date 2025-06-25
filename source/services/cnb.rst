@@ -16,13 +16,13 @@ Install the service:
 
 .. code-block:: bash
 
-    composer install peso/cnb-service
+    composer require peso/cnb-service
 
 Install the service with all recommended dependencies:
 
 .. code-block:: bash
 
-    composer install peso/cnb-service php-http/discovery guzzlehttp/guzzle symfony/cache
+    composer require peso/cnb-service php-http/discovery guzzlehttp/guzzle symfony/cache
 
 Usage
 =====

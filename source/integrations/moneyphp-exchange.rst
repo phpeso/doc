@@ -14,7 +14,7 @@ Installation
 
 .. code-block:: bash
 
-    composer install peso/moneyphp-exchange
+    composer require peso/moneyphp-exchange
 
 Usage
 =====

@@ -16,13 +16,13 @@ Install the service:
 
 .. code-block:: bash
 
-    composer install peso/ecb-service
+    composer require peso/ecb-service
 
 Install the service with all recommended dependencies:
 
 .. code-block:: bash
 
-    composer install peso/ecb-service php-http/discovery guzzlehttp/guzzle symfony/cache
+    composer require peso/ecb-service php-http/discovery guzzlehttp/guzzle symfony/cache
 
 Usage
 =====

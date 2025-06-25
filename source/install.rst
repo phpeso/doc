@@ -5,7 +5,7 @@ To install Peso, first select the desired integration lib, then the desired serv
 
 .. code-block:: bash
 
-    composer install peso/peso peso/ecb-service php-http/discovery guzzlehttp/guzzle symfony/cache
+    composer require peso/peso peso/ecb-service php-http/discovery guzzlehttp/guzzle symfony/cache
 
 In this example
 

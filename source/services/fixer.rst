@@ -16,13 +16,13 @@ Install the service:
 
 .. code-block:: bash
 
-    composer install peso/fixer-service
+    composer require peso/fixer-service
 
 Install the service with all recommended dependencies:
 
 .. code-block:: bash
 
-    composer install peso/fixer-service php-http/discovery guzzlehttp/guzzle symfony/cache
+    composer require peso/fixer-service php-http/discovery guzzlehttp/guzzle symfony/cache
 
 Usage
 =====

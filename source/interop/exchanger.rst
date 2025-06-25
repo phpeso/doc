@@ -15,7 +15,7 @@ Installation
 
 .. code-block:: bash
 
-    composer install peso/peso-exchanger-interop
+    composer require peso/peso-exchanger-interop
 
 Usage
 =====

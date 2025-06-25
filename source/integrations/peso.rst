@@ -12,7 +12,7 @@ Installation
 
 .. code-block:: bash
 
-    composer install peso/peso
+    composer require peso/peso
 
 Usage
 =====
