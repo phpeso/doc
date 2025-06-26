@@ -62,3 +62,9 @@ html_context = {
 }
 
 html_favicon = '../logo/logo.png'
+
+rst_prolog = """
+.. note::
+    This is a documentation page for the pre-release version.
+    For the 1.x series doc, go to https://phpeso.org/v1.x/
+"""
