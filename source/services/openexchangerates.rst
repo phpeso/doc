@@ -27,7 +27,7 @@ Install the service with all recommended dependencies:
 Usage
 =====
 
-.. note::
+.. hint::
     Free key allows you to retrieve only US Dollar as a base currency.
     To be able to convert other currencies back to USD you can wrap it with :ref:`builtin_reversible`.
 
