@@ -17,7 +17,8 @@ In this example
     It is not required, you can configure the client manually.
   * ``guzzlehttp/guzzle`` is a HTTP client known to ``php-http/discovery``.
     Any client supporting PSR-18 would do.
-  * ``symfony/cache`` a cache library if you need caching. (recommended)
+  * ``symfony/cache`` is a cache library if you need caching.
+    Any PSR-16 library would do. (recommended)
 
 Available integrations:
 
