@@ -57,7 +57,7 @@ html_context = {
     'current_version': os.environ.get("READTHEDOCS_VERSION_NAME"),
     'github_user': "phpeso",
     'github_repo': "doc",
-    'github_version': "v0.x",
+    'github_version': "v1.x",
     'doc_path': "source",
 }
 
