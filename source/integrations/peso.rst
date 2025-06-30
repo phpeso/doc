@@ -17,6 +17,8 @@ Installation
 Usage
 =====
 
+.. versionadded:: 1.1 Native conversion requests
+
 Peso returns numeric strings that can be used with various decimal calculation libraries like BcMath
 or, for example, with Money's `Teller object`__.
 
@@ -83,3 +85,25 @@ Convert currency amounts::
     please use `Money for PHP`__ with :ref:`the corresponding integration <peso_moneyphp>`.
 
 .. __: https://www.moneyphp.org/
+
+.. versionadded:: 1.1 Currency conversion modes
+
+Currency conversion modes::
+
+    <?php
+
+    use Peso\Peso\CurrencyConverter;
+    use Peso\Peso\Options\ConversionType;
+
+    // Native only: execute only native conversion requests.
+    // This way you always get authoritative amounts from your service.
+    // The request will fail if the service does not support native conversion.
+    $peso = new CurrencyConverter($service, ConversionType::NativeOnly);
+
+    // CalculatedOnly: only query conversion rates and calculate amounts in-service
+    // This way you conserve requests to the service with more effective caching.
+    $peso = new CurrencyConverter($service, ConversionType::CalculatedOnly);
+
+    // Both (default):
+    // Sends a native request and falls back to calculated rates.
+    $peso = new CurrencyConverter($service, ConversionType::NativeOnly);
