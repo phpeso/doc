@@ -84,6 +84,8 @@ Indirect Exchange Service can make it every-to-every by using the selected curre
     // USD -> EUR -> PLN
     echo $converter->convertOnDate('123.45', 'USD', 'PLN', 2, '2025-06-13'); // 458.38
 
+.. _builtin_conversion:
+
 ConversionService
 =================
 

@@ -11,4 +11,5 @@ like specialized currency exchange data services and central banks.
    install
    integrations
    services
+   core
    interop
