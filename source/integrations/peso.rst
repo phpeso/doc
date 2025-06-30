@@ -104,6 +104,6 @@ Currency conversion modes::
     // This way you conserve requests to the service with more effective caching.
     $peso = new CurrencyConverter($service, ConversionType::CalculatedOnly);
 
-    // Both (default):
-    // Sends a native request and falls back to calculated rates.
-    $peso = new CurrencyConverter($service, ConversionType::NativeOnly);
+    // Fallback (default):
+    // Sends a native request and if it fails, falls back to calculated rates.
+    $peso = new CurrencyConverter($service);
