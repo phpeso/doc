@@ -84,8 +84,32 @@ Indirect Exchange Service can make it every-to-every by using the selected curre
     // USD -> EUR -> PLN
     echo $converter->convertOnDate('123.45', 'USD', 'PLN', 2, '2025-06-13'); // 458.38
 
+ConversionService
+=================
+
+.. versionadded:: 1.1
+
+``\Peso\Core\Services\ConversionService``
+
+Accepts an instance of ``CurrentConversionRequest`` / ``HistoricalConversionRequest``
+and calculates the conversion amount by sending ``CurrentExchangeRateRequest`` / ``HistoricalConversionRequest``
+to a wrapped service::
+
+    <?php
+
+    use Peso\Core\Requests\CurrentConversionRequest;
+    use Peso\Core\Services\ConversionService;
+    use Peso\Core\Types\Decimal;
+    use Peso\Services\EuropeanCentralBankService;
+
+    $service = new ConversionService(new EuropeanCentralBankService());
+
+    echo $service->send(
+        new CurrentConversionRequest(new Decimal('123.45'), 'EUR', 'PHP')
+    )->amount->value; // 8167.57545 (2025-06-30)
+
 ArrayService
-------------
+============
 
 ``\Peso\Core\Services\ArrayService($currentRates = [], $historicalRates = [])``
 
@@ -122,7 +146,7 @@ Array Service holds static exchange rates::
         $converter->convertOnDate('150.00', 'EUR', 'USD', 2, '2025-06-13'), PHP_EOL; // 163.50
 
 NullService
------------
+===========
 
 ``\Peso\Core\Services\NullService``
 

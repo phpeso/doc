@@ -36,8 +36,6 @@ Example::
     use Symfony\Component\Cache\Adapter\FilesystemAdapter;
     use Symfony\Component\Cache\Psr16Cache;
 
-    require __DIR__ . '/../vendor/autoload.php';
-
     $cache = new Psr16Cache(new FilesystemAdapter(directory: __DIR__ . '/cache'));
     $service = new CzechNationalBankService($cache);
     $converter = new CurrencyConverter($service);
