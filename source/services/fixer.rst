@@ -27,6 +27,8 @@ Install the service with all recommended dependencies:
 Usage
 =====
 
+.. versionadded:: 1.1 Native conversion requests support
+
 .. hint::
     Free key allows you to retrieve only Euro as a base currency.
     To be able to convert other currencies back to EUR you can wrap it with :ref:`builtin_reversible`.
