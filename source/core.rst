@@ -41,7 +41,7 @@ Services operate on request/response model.
     *   * Conversion by a historical rate
         * ``HistoricalConversionRequest``
         * ``ConversionResponse`` or ``ErrorResponse``
-    *   * future scope and invalid classes
+    *   * Future scope and invalid classes
         * any other object
         * ``ErrorResponse``
 

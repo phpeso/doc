@@ -20,9 +20,7 @@ In this example
   * ``symfony/cache`` is a cache library if you need caching.
     Any PSR-16 library would do. (recommended)
 
-Available integrations:
-
-.. list-table::
+.. list-table:: Available integrations:
 
     * * ``peso/peso``
       * .. image:: https://img.shields.io/packagist/v/peso/peso.svg?style=flat-square
@@ -33,9 +31,7 @@ Available integrations:
            :target: https://packagist.org/packages/peso/moneyphp-exchange
       * :ref:`Exchange class for the Money for PHP library <peso_moneyphp>`
 
-Available services:
-
-.. list-table::
+.. list-table:: Available services:
 
     * * ``peso/ecb-service``
       * .. image:: https://img.shields.io/packagist/v/peso/ecb-service.svg?style=flat-square
@@ -54,9 +50,7 @@ Available services:
            :target: https://packagist.org/packages/peso/openexchangerates-service
       * :ref:`Open Exchange Rates <openexchangerates_service>`
 
-Available interoperability connectors:
-
-.. list-table::
+.. list-table:: Available interoperability connectors:
 
     * * ``peso/peso-exchanger-interop``
       * .. image:: https://img.shields.io/packagist/v/peso/peso-exchanger-interop.svg?style=flat-square
