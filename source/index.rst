@@ -12,4 +12,5 @@ like specialized currency exchange data services and central banks.
    integrations
    services
    core
+   extend
    interop

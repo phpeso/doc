@@ -1,3 +1,5 @@
+.. _core:
+
 Advanced Usage
 ##############
 
@@ -8,15 +10,19 @@ In case you need to use all power of Peso, you can use the core directly.
 Installation
 ============
 
+Depend on ``peso/core`` if you are creating an integration:
+
 .. code-block:: bash
 
     composer require peso/core
 
-but generally you don't need to depend on peso/core at all, just install the service you need, ECB for example:
+If you just want to use services directly, just install the service you need, ECB for example:
 
 .. code-block:: bash
 
     composer require peso/ecb-service php-http/discovery guzzlehttp/guzzle symfony/cache
+
+.. _model:
 
 Model
 =====
