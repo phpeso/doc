@@ -61,7 +61,7 @@ The ``supports()`` method is used for a fast check if the service can handle a r
 
 * If ``supports($request)`` returns false, ``send($request)`` MUST return ``ErrorResponse``.
 * ``supports()`` SHOULD NOT do any external requests, it SHOULD be as simple and fast as possible.
-* The client is NOT obliged to call ``supports($request)`` before ``send($request)``,
+* The user is **not** obliged to call ``supports($request)`` before ``send($request)``,
   so ``send($request)`` MUST NOT crash just because it was fed an unsupported request.
 
 ``send()`` Method
@@ -71,13 +71,14 @@ The ``send()`` method executes a request.
 
 * If the request object is not supported, the service MUST return the ``ErrorResponse``.
 * The service MUST return a response object that corresponds to the request :ref:`according to the model <model>`.
-* You do not need to declare responses in the response type hint that you don't plan to return.
-  Therefore only the ``ErrorResponse`` is required.
+* The service MAY add custom request objects but not custom response objects.
+* You do not need to declare responses in the response type hint that you don't plan to return,
+  therefore only the ``ErrorResponse`` is required.
   See PHP manual for Covariance_ and `Union Types`_ in PHP.
 * If the request can't be handled for expected and valid reasons, the method MUST return an instance of
-  ``ErrorResponse`` that wraps an instance of ``Peso\Core\Exceptions\PesoResponseException`` (NOT throw!)
+  ``ErrorResponse`` that wraps an instance of ``Peso\Core\Exceptions\PesoResponseException``. (MUST NOT throw!)
   For example, if the currency pair or the request type itself is unsupported.
-* If the request can't be handled for some unexpected reason, like network failure or unexpected response from the server,
+* If the request can't be handled for some unexpected reason, like network failure or unexpected response from a server,
   the method MUST throw an instance of ``Peso\Core\Exceptions\RuntimeException``.
 
 .. _Covariance: https://www.php.net/manual/en/language.oop5.variance.php
