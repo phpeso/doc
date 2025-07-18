@@ -36,19 +36,23 @@ In this example
     * * ``peso/ecb-service``
       * .. image:: https://img.shields.io/packagist/v/peso/ecb-service.svg?style=flat-square
            :target: https://packagist.org/packages/peso/ecb-service
-      * :ref:`European Central Bank <ecb_service>`
+      * :ref:`ecb_service`
     * * ``peso/cnb-service``
       * .. image:: https://img.shields.io/packagist/v/peso/cnb-service.svg?style=flat-square
            :target: https://packagist.org/packages/peso/cnb-service
-      * :ref:`Czech National Bank <cnb_service>`
+      * :ref:`cnb_service`
     * * ``peso/fixer-service``
       * .. image:: https://img.shields.io/packagist/v/peso/fixer-service.svg?style=flat-square
            :target: https://packagist.org/packages/peso/fixer-service
-      * :ref:`Fixer <fixer_service>`
+      * :ref:`fixer_service`
     * * ``peso/openexchangerates-service``
       * .. image:: https://img.shields.io/packagist/v/peso/openexchangerates-service.svg?style=flat-square
            :target: https://packagist.org/packages/peso/openexchangerates-service
-      * :ref:`Open Exchange Rates <openexchangerates_service>`
+      * :ref:`openexchangerates_service`
+    * * ``peso/freecurrencyapi-service``
+      * .. image:: https://img.shields.io/packagist/v/peso/freecurrencyapi-service.svg?style=flat-square
+           :target: https://packagist.org/packages/peso/freecurrencyapi-service
+      * :ref:`freecurrencyapi_service`
 
 .. list-table:: Available interoperability connectors:
 
