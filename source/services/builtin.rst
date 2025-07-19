@@ -27,6 +27,23 @@ Chain service allows you to request data from several sources::
     // ECB doesn't know that
     echo $converter->convertOnDate('1.20', 'USD', 'CZK', 2, '2025-06-13'); // 25.88
 
+TrivialService
+==============
+
+TrivialService returns rate of 1 when currency is exchanged to itself.
+Use it when the service does not contain a self-reference entry for the currency
+or to prefix a service with limits to avoid pointless calls::
+
+    <?php
+
+    use Peso\Core\Services\TrivialService;
+    use Peso\Peso\CurrencyConverter;
+
+    $service = new TrivialService();
+    $peso = new CurrencyConverter($service);
+
+    echo $peso->convert('123.45', 'EUR', 'EUR', 2), PHP_EOL; // 123.45
+
 .. _builtin_reversible:
 
 ReversibleService
