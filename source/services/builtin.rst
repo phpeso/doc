@@ -30,6 +30,8 @@ Chain service allows you to request data from several sources::
 TrivialService
 ==============
 
+.. versionadded:: 1.2
+
 TrivialService returns rate of 1 when currency is exchanged to itself.
 Use it when the service does not contain a self-reference entry for the currency
 or to prefix a service with limits to avoid pointless calls::
