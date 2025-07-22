@@ -79,7 +79,7 @@ The ``send()`` method executes a request.
   ``ErrorResponse`` that wraps an instance of ``Peso\Core\Exceptions\PesoResponseException``. (MUST NOT throw!)
   For example, if the currency pair or the request type itself is unsupported.
 * If the request can't be handled for some unexpected reason, like network failure or unexpected response from a server,
-  the method MUST throw an instance of ``Peso\Core\Exceptions\RuntimeException``.
+  the method MUST throw either an instance of ``Peso\Core\Exceptions\RuntimeException`` or an instance of ``\Error``.
 
 .. _Covariance: https://www.php.net/manual/en/language.oop5.variance.php
 .. _Union Types: https://www.php.net/manual/en/language.types.type-system.php#language.types.type-system.composite.union
