@@ -53,7 +53,7 @@ ReversibleService
 
 ``\Peso\Core\Services\ReversibleService``
 
-.. warning::
+.. note::
     Values returned by a Reversible Service are calculated and therefore informational only.
     Never use them for precise conversions.
 
@@ -77,7 +77,7 @@ IndirectExchangeService
 
 ``\Peso\Core\Services\IndirectExchangeService``
 
-.. warning::
+.. note::
     Values returned by an Indirect Exchange Service are calculated and therefore informational only.
     Never use them for precise conversions.
 

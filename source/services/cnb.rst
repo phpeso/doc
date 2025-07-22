@@ -51,6 +51,6 @@ Example::
     // 502.71 as of 2025-06-23
     echo $converter->convert('12500', 'CZK', 'EUR', 2), PHP_EOL;
 
-.. warning::
+.. note::
     Reversible Factory emits non-precise services
     that can only be used in informational purposes.

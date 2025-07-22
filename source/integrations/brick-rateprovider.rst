@@ -56,6 +56,6 @@ There are two RateProvider objects:
 
     echo $converter->convert($eur100, 'USD'), PHP_EOL; // 'USD 115.12'
 
-.. note:: `See more on the Brick\\Money doc page`__.
+.. seealso:: `See more on the Brick\\Money doc page`__.
 
 .. __: https://github.com/brick/money/blob/master/README.md#currency-conversion

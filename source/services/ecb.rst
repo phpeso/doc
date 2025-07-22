@@ -59,10 +59,10 @@ Example::
     // 270299.70 as of 2025-06-19
     echo $converter->convert('12500', 'USD', 'CZK', 2), PHP_EOL;
 
-.. note::
+.. warning::
     Using this service without a properly set up cache is strongly discouraged
     and may lead to a poor performance.
 
-.. warning::
+.. note::
     Universal and Reversible factories emit non-precise services
     that can only be used in informational purposes.
