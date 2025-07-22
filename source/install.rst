@@ -29,7 +29,11 @@ In this example
     * * ``peso/moneyphp-exchange``
       * .. image:: https://img.shields.io/packagist/v/peso/moneyphp-exchange.svg?style=flat-square
            :target: https://packagist.org/packages/peso/moneyphp-exchange
-      * :ref:`Exchange class for the Money for PHP library <peso_moneyphp>`
+      * :ref:`Exchange classes for the Money for PHP library <peso_moneyphp>`
+    * * ``peso/brick-rateprovider``
+      * .. image:: https://img.shields.io/packagist/v/peso/brick-rateprovider.svg?style=flat-square
+           :target: https://packagist.org/packages/peso/brick-rateprovider
+      * :ref:`RateProvider classes for the Brick\\Money library <peso_brick>`
 
 .. list-table:: Available services:
 

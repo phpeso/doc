@@ -9,3 +9,4 @@ a simple to use Peso and an Exchange class to be used with Money for PHP.
 
    integrations/peso
    integrations/moneyphp-exchange
+   integrations/brick-rateprovider
