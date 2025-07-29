@@ -57,6 +57,10 @@ In this example
       * .. image:: https://img.shields.io/packagist/v/peso/freecurrencyapi-service.svg?style=flat-square
            :target: https://packagist.org/packages/peso/freecurrencyapi-service
       * :ref:`freecurrencyapi_service`
+    * * ``peso/currencyapi-service``
+      * .. image:: https://img.shields.io/packagist/v/peso/currencyapi-service.svg?style=flat-square
+           :target: https://packagist.org/packages/peso/currencyapi-service
+      * :ref:`currencyapi_service`
 
 .. list-table:: Available interoperability connectors:
 

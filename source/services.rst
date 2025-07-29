@@ -11,4 +11,5 @@ Specific data sources for currency conversion.
    services/fixer
    services/openexchangerates
    services/freecurrencyapi
+   services/currencyapi
    services/builtin
