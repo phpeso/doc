@@ -166,6 +166,42 @@ Array Service holds static exchange rates::
         $converter->convert('150.00', 'EUR', 'USD', 2), PHP_EOL, // 168.00
         $converter->convertOnDate('150.00', 'EUR', 'USD', 2, '2025-06-13'), PHP_EOL; // 163.50
 
+Callback Service
+================
+
+.. versionadded:: 1.3
+
+``\Peso\Core\Services\CallbackService``
+
+Callback service is a wrapper for a closure to quickly create a simple test service::
+
+    <?php
+
+    use Arokettu\Date\Date;
+    use Peso\Core\Exceptions\RequestNotSupportedException;
+    use Peso\Core\Requests\CurrentExchangeRateRequest;
+    use Peso\Core\Responses\ErrorResponse;
+    use Peso\Core\Responses\ExchangeRateResponse;
+    use Peso\Core\Services\CallbackService;
+    use Peso\Core\Types\Decimal;
+    use Peso\Peso\CurrencyConverter;
+
+    require __DIR__ . '/vendor/autoload.php';
+
+    $peso = new CurrencyConverter(new CallbackService(function ($request) {
+        if (
+            $request instanceof CurrentExchangeRateRequest &&
+            $request->quoteCurrency === 'GBP' &&
+            $request->baseCurrency === 'EUR'
+        ) {
+            return new ExchangeRateResponse(Decimal::init('1.5'), Date::today());
+        }
+
+        return new ErrorResponse(RequestNotSupportedException::fromRequest($request));
+    }));
+
+    echo $peso->convert('1200', 'EUR', 'GBP', 2); // 1800.00
+
 NullService
 ===========
 
