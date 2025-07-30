@@ -27,17 +27,25 @@ Install the service with all recommended dependencies:
 Usage
 =====
 
+.. versionchanged:: 1.1 ``CzechNationalBankService`` -> ``CzechNationalBank\CentralBankFixingService``
+.. versionadded:: 1.1 ``OtherCurrenciesService``
+
+The package provides 2 Service objects:
+
+* ``\Peso\Services\CzechNationalBank\CentralBankFixingService``: Central bank exchange rate fixing data (daily rates)
+* ``\Peso\Services\CzechNationalBank\OtherCurrenciesService``: FX rates of other currencies (monthly rates)
+
 Example::
 
     <?php
 
     use Peso\Peso\CurrencyConverter;
-    use Peso\Services\CzechNationalBankService;
+    use Peso\Services\CzechNationalBank\CentralBankFixingService;
     use Symfony\Component\Cache\Adapter\FilesystemAdapter;
     use Symfony\Component\Cache\Psr16Cache;
 
     $cache = new Psr16Cache(new FilesystemAdapter(directory: __DIR__ . '/cache'));
-    $service = new CzechNationalBankService($cache);
+    $service = new CentralBankFixingService($cache);
     $converter = new CurrencyConverter($service);
 
     // 310812.50 as of 2025-06-23
@@ -45,7 +53,7 @@ Example::
 
     // reversible (wraps service with ReversibleService)
 
-    $service = CzechNationalBankService::reversible($cache);
+    $service = CentralBankFixingService::reversible($cache);
     $converter = new CurrencyConverter($service);
 
     // 502.71 as of 2025-06-23

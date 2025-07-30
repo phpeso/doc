@@ -186,8 +186,6 @@ Callback service is a wrapper for a closure to quickly create a simple test serv
     use Peso\Core\Types\Decimal;
     use Peso\Peso\CurrencyConverter;
 
-    require __DIR__ . '/vendor/autoload.php';
-
     $peso = new CurrencyConverter(new CallbackService(function ($request) {
         if (
             $request instanceof CurrentExchangeRateRequest &&
