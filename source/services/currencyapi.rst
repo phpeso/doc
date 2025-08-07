@@ -27,6 +27,51 @@ Install the service with all recommended dependencies:
 Usage
 =====
 
+.. versionadded:: 2.0 Conversion requests support
+
+.. php:namespace:: Peso\Services
+.. php:class:: CurrencyApiService
+
+    The service
+
+    .. php:method:: __construct($apiKey, $subscription, [$symbols, $multiconversion, [$cache, $ttl, $httpClient, $requestFactory]])
+
+        Required params:
+
+        :param string $apiKey: The API key you received from the service.
+        :param Subscription $subscription: Subscription type, Free or Paid.
+
+        Configuration:
+
+        :param array|null $symbols:
+            Use this list to limit currencies in the query (limits only quote/target currencies)
+            Default: ``null`` queries all currencies.
+        :param bool $multiconversion:
+            Enable if you need to convert a single amount of a single currency to multiple currenices.
+            The service will ask the backend to get result for all currencies (controlled by ``$symbols``)
+            and the subsequent requests will get results from the cache.
+            Only valid for conversion requests and requires caching enabled.
+            Default: ``false``.
+
+        Services:
+
+        :param CacheInterface $cache: PSR-16 Cache Instance. Default: no cache (not recommended).
+        :param DateInterval $ttl: Cache TTL. Default: ``1 hour``.
+        :param ClientInterface $httpClient: PSR-18 Client Instance.
+            Default: something discovered (requires ``php-http/discovery`` and an implementation installed).
+        :param RequestFactoryInterface $requestFactory: PSR-17 RequestFactory Instance.
+            Default: something discovered (requires ``php-http/discovery`` and an implementation installed).
+
+.. php:namespace:: Peso\Services\CurrencyApiService
+.. php:enum:: Subscrtiption
+
+    .. php:const:: Free
+
+        Free subscription (no conversion requests)
+    .. php:const:: Paid
+
+        Any type of paid subscription (conversion requests)
+
 Example::
 
     <?php
@@ -52,3 +97,12 @@ Example::
     $converter = new CurrencyConverter($service);
 
     // ...
+
+Upgrade
+=======
+
+1.x to 2.x
+----------
+
+* An extra parameter, ``$multiconversion`` was added to the constructor.
+  If you are not using named parameters, you need to account for that.
