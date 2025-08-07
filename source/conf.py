@@ -62,3 +62,8 @@ html_context = {
 }
 
 html_favicon = '../logo/logo.png'
+
+extensions = [
+    'sphinx_copybutton',
+    'sphinxcontrib.phpdomain',
+]
