@@ -200,19 +200,37 @@ Callback service is a wrapper for a closure to quickly create a simple test serv
 
     echo $peso->convert('1200', 'EUR', 'GBP', 2); // 1800.00
 
-NullService
-===========
+NullService and BlackHoleService
+================================
 
-``\Peso\Core\Services\NullService``
+.. versionadded:: 1.4 BlackHoleService
 
-Null Service fails every request, may be useful for testing purposes::
+| ``\Peso\Core\Services\NullService``
+| ``\Peso\Core\Services\BlackHoleService``
+
+Null Service does not support any requests.
+Black Hole Service supports all standard requests but returns only apporopriate ErrorResponses.
+They may be useful for testing purposes::
 
     <?php
 
+    use Arokettu\Date\Date;
+    use Peso\Core\Requests\CurrentExchangeRateRequest;
+    use Peso\Core\Services\BlackHoleService;
     use Peso\Core\Services\NullService;
     use Peso\Peso\CurrencyConverter;
 
     $converter = new CurrencyConverter(new NullService());
-
     // Peso\Core\Exceptions\RequestNotSupportedException
-    $converter->convert('100', 'USD', 'EUR', 2);
+    $converter->getExchangeRate('USD', 'EUR');
+
+    $converter = new CurrencyConverter(new BlackHoleService());
+    // Peso\Core\Exceptions\ExchangeRateNotFoundException
+    $converter->getExchangeRate('USD', 'EUR');
+
+    // "Support" only specific requests
+    $converter = new CurrencyConverter(new BlackHoleService(CurrentExchangeRateRequest::class));
+    // Peso\Core\Exceptions\ExchangeRateNotFoundException
+    $converter->getExchangeRate('USD', 'EUR');
+    // Peso\Core\Exceptions\RequestNotSupportedException
+    $converter->getHistoricalExchangeRate('USD', 'EUR', Date::today());

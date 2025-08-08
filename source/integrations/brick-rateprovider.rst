@@ -35,8 +35,6 @@ There are two RateProvider objects:
     use Peso\Brick\PesoRateProvider;
     use Peso\Services\EuropeanCentralBankService;
 
-    require __DIR__ . '/vendor/autoload.php';
-
     $rateProvider = new PesoRateProvider(new EuropeanCentralBankService());
     $converter = new CurrencyConverter($rateProvider);
 
