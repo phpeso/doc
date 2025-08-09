@@ -82,9 +82,7 @@ Convert currency amounts::
 .. note::
     Peso does not store a list of currencies so you need to specify amount precision manually.
     If you want this to happen automatically,
-    please use `Money for PHP`__ with :ref:`the corresponding integration <peso_moneyphp>`.
-
-.. __: https://www.moneyphp.org/
+    please use :ref:`Money for PHP <peso_moneyphp>` or :ref:`Brick\\Money <peso_brick>` integrations.
 
 .. versionadded:: 1.1 Currency conversion modes
 
