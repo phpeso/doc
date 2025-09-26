@@ -45,6 +45,10 @@ In this example
       * .. image:: https://img.shields.io/packagist/v/peso/cnb-service.svg?style=flat-square
            :target: https://packagist.org/packages/peso/cnb-service
       * :ref:`cnb_service`
+    * * ``peso/bnr-service``
+      * .. image:: https://img.shields.io/packagist/v/peso/bnr-service.svg?style=flat-square
+           :target: https://packagist.org/packages/peso/bnr-service
+      * :ref:`bnr_service`
     * * ``peso/fixer-service``
       * .. image:: https://img.shields.io/packagist/v/peso/fixer-service.svg?style=flat-square
            :target: https://packagist.org/packages/peso/fixer-service
