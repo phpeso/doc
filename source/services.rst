@@ -8,6 +8,7 @@ Specific data sources for currency conversion.
 
    services/ecb
    services/cnb
+   services/mnb
    services/bnr
    services/fixer
    services/openexchangerates
