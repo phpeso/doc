@@ -35,6 +35,7 @@ In this example
            :target: https://packagist.org/packages/peso/brick-rateprovider
       * :ref:`RateProvider classes for the Brick\\Money library <peso_brick>`
 
+.. same order as in services.rst
 .. list-table:: Available services:
 
     * * ``peso/ecb-service``
@@ -53,22 +54,27 @@ In this example
       * .. image:: https://img.shields.io/packagist/v/peso/bnr-service.svg?style=flat-square
            :target: https://packagist.org/packages/peso/bnr-service
       * :ref:`bnr_service`
-    * * ``peso/fixer-service``
-      * .. image:: https://img.shields.io/packagist/v/peso/fixer-service.svg?style=flat-square
-           :target: https://packagist.org/packages/peso/fixer-service
-      * :ref:`fixer_service`
-    * * ``peso/openexchangerates-service``
-      * .. image:: https://img.shields.io/packagist/v/peso/openexchangerates-service.svg?style=flat-square
-           :target: https://packagist.org/packages/peso/openexchangerates-service
-      * :ref:`openexchangerates_service`
-    * * ``peso/freecurrencyapi-service``
-      * .. image:: https://img.shields.io/packagist/v/peso/freecurrencyapi-service.svg?style=flat-square
-           :target: https://packagist.org/packages/peso/freecurrencyapi-service
-      * :ref:`freecurrencyapi_service`
+
     * * ``peso/currencyapi-service``
       * .. image:: https://img.shields.io/packagist/v/peso/currencyapi-service.svg?style=flat-square
            :target: https://packagist.org/packages/peso/currencyapi-service
       * :ref:`currencyapi_service`
+    * * ``peso/fixer-service``
+      * .. image:: https://img.shields.io/packagist/v/peso/fixer-service.svg?style=flat-square
+           :target: https://packagist.org/packages/peso/fixer-service
+      * :ref:`fixer_service`
+    * * ``peso/frankfurter-service``
+      * .. image:: https://img.shields.io/packagist/v/peso/frankfurter-service.svg?style=flat-square
+           :target: https://packagist.org/packages/peso/frankfurter-service
+      * :ref:`frankfurter_service`
+    * * ``peso/freecurrencyapi-service``
+      * .. image:: https://img.shields.io/packagist/v/peso/freecurrencyapi-service.svg?style=flat-square
+           :target: https://packagist.org/packages/peso/freecurrencyapi-service
+      * :ref:`freecurrencyapi_service`
+    * * ``peso/openexchangerates-service``
+      * .. image:: https://img.shields.io/packagist/v/peso/openexchangerates-service.svg?style=flat-square
+           :target: https://packagist.org/packages/peso/openexchangerates-service
+      * :ref:`openexchangerates_service`
 
 .. list-table:: Available interoperability connectors:
 
