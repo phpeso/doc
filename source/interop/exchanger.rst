@@ -6,16 +6,21 @@ Exchanger and Swap
 .. highlight:: php
 
 Interoperability package for Exchanger_ and Swap_.
+Since version 1.0.2 it is possible to use this package with compatible Exchange forks like `part-db/exchanger <pdbexchanger_>`__,
+however it is not officially supported.
 
 .. _Exchanger: https://florianv.github.io/exchanger/
 .. _Swap: https://florianv.github.io/swap/
+.. _pdbexchanger: https://packagist.org/packages/part-db/exchanger
 
 Installation
 ============
 
+.. versionchanged:: 1.0.2 florianv/exchanger is no longer an explicit dependency of this package
+
 .. code-block:: bash
 
-    composer require peso/peso-exchanger-interop
+    composer require peso/peso-exchanger-interop florianv/exchanger
 
 Usage
 =====
