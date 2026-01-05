@@ -6,7 +6,7 @@ Exchanger and Swap
 .. highlight:: php
 
 Interoperability package for Exchanger_ and Swap_.
-Since version 1.0.2 it is possible to use this package with compatible Exchange forks like `part-db/exchanger <pdbexchanger_>`__,
+Since version 1.0.2 it is possible to use this package with compatible Exchanger forks like `part-db/exchanger <pdbexchanger_>`__,
 however it is not officially supported.
 
 .. _Exchanger: https://florianv.github.io/exchanger/
