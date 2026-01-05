@@ -25,10 +25,12 @@ Installation
 Usage
 =====
 
+.. versionchanged:: 1.1.0 Namespace change: ``Peso\Exchanger\Interop`` → ``Peso\Interop\Exchanger``
+
 The library is essentially 2 classes:
 
-* ``\Peso\Exchanger\Interop\ExchangerService`` wraps Peso services to be used in Exchanger
-* ``\Peso\Exchanger\Interop\PesoService`` wraps Exchanger services to be used in Peso
+* ``\Peso\Interop\Exchanger\ExchangerService`` wraps Peso services to be used in Exchanger
+* ``\Peso\Interop\Exchanger\PesoService`` wraps Exchanger services to be used in Peso
 
 Peso services in Exchanger
 --------------------------
@@ -39,7 +41,7 @@ Create a Peso service and pass it to Exchanger::
 
     use Exchanger\Exchanger;
     use Exchanger\ExchangeRateQueryBuilder;
-    use Peso\Exchanger\Interop\ExchangerService;
+    use Peso\Interop\Exchanger\ExchangerService;
     use Peso\Services\EuropeanCentralBankService;
 
     $service = new ExchangerService(new EuropeanCentralBankService());
@@ -60,7 +62,7 @@ Swap is a library that wraps Exchanger so it works too::
 
     <?php
 
-    use Peso\Exchanger\Interop\ExchangerService;
+    use Peso\Interop\Exchanger\ExchangerService;
     use Peso\Services\EuropeanCentralBankService;
     use Swap\Builder;
 
@@ -81,7 +83,7 @@ Create an Exchanger service and pass it to Peso::
     <?php
 
     use Exchanger\Service\EuropeanCentralBank;
-    use Peso\Exchanger\Interop\PesoService;
+    use Peso\Interop\Exchanger\PesoService;
     use Peso\Peso\CurrencyConverter;
 
     $service = new PesoService(new EuropeanCentralBank());
@@ -101,7 +103,7 @@ In Exchanger, caching is a responsibility of the Exchanger itself.
 
     <?php
 
-    use Peso\Exchanger\Interop\ExchangerService;
+    use Peso\Interop\Exchanger\ExchangerService;
     use Peso\Services\EuropeanCentralBankService;
     use Swap\Builder;
     use Symfony\Component\Cache\Adapter\FilesystemAdapter;
@@ -125,7 +127,7 @@ In Exchanger, caching is a responsibility of the Exchanger itself.
     <?php
 
     use Exchanger\Service\EuropeanCentralBank;
-    use Peso\Exchanger\Interop\PesoService;
+    use Peso\Interop\Exchanger\PesoService;
     use Peso\Peso\CurrencyConverter;
     use Symfony\Component\Cache\Adapter\FilesystemAdapter;
     use Symfony\Component\Cache\Psr16Cache;
