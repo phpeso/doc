@@ -82,3 +82,7 @@ In this example
       * .. image:: https://img.shields.io/packagist/v/peso/peso-exchanger-interop.svg?style=flat-square
            :target: https://packagist.org/packages/peso/peso-exchanger-interop
       * :ref:`Exchanger and Swap <exchanger_interop>`
+
+You can suggest new integrations and services in `our roadmap repo`__ (GitHub only)
+
+.. __: https://github.com/phpeso/roadmap
