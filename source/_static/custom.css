@@ -1,0 +1,5 @@
+/* fix 1.2.0 problem with icon justification */
+
+ul.navbar-icon-links.navbar-icon-links {
+    justify-content: space-evenly !important;
+}

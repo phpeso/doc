@@ -63,6 +63,13 @@ html_context = {
 
 html_favicon = '../logo/logo.png'
 
+html_static_path = [
+    '_static',
+]
+html_css_files = [
+    'custom.css',
+]
+
 extensions = [
     'sphinx_copybutton',
     'sphinxcontrib.phpdomain',
