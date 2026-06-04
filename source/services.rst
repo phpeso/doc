@@ -16,6 +16,7 @@ Specific data sources for currency conversion.
    services/mnb
    services/bnr
 
+   services/coinlayer
    services/currencyapi
    services/fixer
    services/frankfurter

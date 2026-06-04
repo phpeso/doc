@@ -55,6 +55,10 @@ In this example
            :target: https://packagist.org/packages/peso/bnr-service
       * :ref:`bnr_service`
 
+    * * ``peso/coinlayer-service``
+      * .. image:: https://img.shields.io/packagist/v/peso/coinlayer-service.svg?style=flat-square
+           :target: https://packagist.org/packages/peso/coinlayer-service
+      * :ref:`coinlayer_service`
     * * ``peso/currencyapi-service``
       * .. image:: https://img.shields.io/packagist/v/peso/currencyapi-service.svg?style=flat-square
            :target: https://packagist.org/packages/peso/currencyapi-service
