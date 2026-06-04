@@ -77,7 +77,7 @@ In this example
       * :ref:`openexchangerates_service`
 
 .. important::
-    API implementation is neither an ad nor a recommendation.
+    API implementation is neither an endorsement nor a recommendation.
     Please use your own judgement before integrating a specific service.
 
 .. list-table:: Available interoperability connectors:
