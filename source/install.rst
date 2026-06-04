@@ -76,6 +76,10 @@ In this example
            :target: https://packagist.org/packages/peso/openexchangerates-service
       * :ref:`openexchangerates_service`
 
+.. important::
+    API implementation is neither an ad nor a recommendation.
+    Please use your own judgement before integrating a specific service.
+
 .. list-table:: Available interoperability connectors:
 
     * * ``peso/peso-exchanger-interop``
