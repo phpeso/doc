@@ -38,7 +38,8 @@ Example::
     use Symfony\Component\Cache\Psr16Cache;
 
     $cache = new Psr16Cache(new FilesystemAdapter(directory: __DIR__ . '/cache'));
-    // You need a reversible service to get fiat to crypto rates (only crypto to fiat is supported by the service)
+    // You need a reversible service to get fiat to crypto rates
+    // (only crypto to fiat is supported for rate requests)
     $service = CoinlayerService::reversible('...', AccessKeyType::Free, cache: $cache);
     $converter = new CurrencyConverter($service);
 
